@@ -9,6 +9,7 @@
 #if os(iOS)
 
 import UIKit
+import MJRefresh
 
 public typealias Index = Int
 public typealias Closure = () -> Void
@@ -83,7 +84,7 @@ public final class DropDown: UIView {
 	//MARK: UI
 	fileprivate let dismissableView = UIView()
 	fileprivate let tableViewContainer = UIView()
-	fileprivate let tableView = UITableView()
+    public var tableView = UITableView()
 	fileprivate var templateCell: DropDownCell!
     fileprivate lazy var arrowIndication: UIImageView = {
         UIGraphicsBeginImageContextWithOptions(CGSize(width: 20, height: 10), false, 0)

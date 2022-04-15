@@ -21,6 +21,8 @@ Pod::Spec.new do |s|
     :git => "https://github.com/AssistoLab/DropDown.git",
     :tag => "v#{s.version.to_s}"
   }
+  
+  s.dependency 'MJRefresh', '~> 3.7.5'
 
   s.source_files = "DropDown/src", "DropDown/src/**/*.{h,m}", "DropDown/helpers", "DropDown/helpers/**/*.{h,m}"
   s.resources = "DropDown/resources/*.{png,xib}"
